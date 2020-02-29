@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+{{ form }}
+{% csrf_token %}
+<button type="submit">Upload</button>
+</form>
+</body>
+</html>
